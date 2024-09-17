@@ -3,25 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* #region common */
 body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
 }
+
 main {
     height: calc(100% - 88px);
     display: flex
 }
+
 /* #region debug  */
 .debug main {
     border: dashed 1px;
     background-color: chartreuse;
 }
+
 .debug footer {
-   border: dashed 1px;
-   background-color: blueviolet; 
+    border: dashed 1px;
+    background-color: blueviolet;
 }
+
 /* #region utility */
 
 .sidebar {
@@ -29,20 +34,33 @@ main {
     border: dashed;
     height: 100%;
     background-color: darkblue;
+
+    @media(max-width: 600px) {
+        width: 50px;
+
+    }
 }
+
 .content {
     border: dashed 1px;
     height: 100%;
     width: calc(100% - 245px);
     background-color: darkred;
+
+    @media(max-width: 600px) {
+        width: calc(100% - 50px)
+    }
 }
+
 .container {
     width: 80%;
     margin: auto;
 }
+
 .row {
     display: flex;
     justify-content: space-around;
+
     .col-4 {
         width: calc((100% / 12)*4);
         border: dashed 1px;
@@ -51,6 +69,21 @@ main {
         margin-top: 2rem;
     }
 }
+
 .bottom {
     height: 88px;
+}
+
+/* media query */
+
+@media screen and (min-width: 700px) {
+    .sidebar {
+        width: 229px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .content {
+        width: calc(100% - 229px);
+    }
 }
