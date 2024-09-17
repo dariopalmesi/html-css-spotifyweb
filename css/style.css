@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #region common */
+body {
+    height: 100vh;
+    width: 100%;
+    border: solid 1px;
+}
+.debug main {
+    border: dashed 1px;
+    background-color: chartreuse;
+}
+.debug footer {
+   border: dashed 1px;
+   background-color: blueviolet; 
+}
+/* #region utility */
+.top {
+    height: calc(100%-88);
+}
+
+.bottom {
+    height: 88px;
+}
