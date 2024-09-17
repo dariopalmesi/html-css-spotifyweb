@@ -7,8 +7,12 @@
 body {
     height: 100vh;
     width: 100%;
-    border: solid 1px;
 }
+main {
+    height: calc(100% - 88px);
+    display: flex
+}
+/* #region debug  */
 .debug main {
     border: dashed 1px;
     background-color: chartreuse;
@@ -18,10 +22,19 @@ body {
    background-color: blueviolet; 
 }
 /* #region utility */
-.top {
-    height: calc(100%-88);
-}
 
+.sidebar {
+    width: 245px;
+    border: dashed;
+    height: 100%;
+    background-color: darkblue;
+}
+.content {
+    border: dashed 1px;
+    height: 100%;
+    width: calc(100% - 245px);
+    background-color: darkred;
+}
 .bottom {
     height: 88px;
 }
