@@ -87,3 +87,14 @@ main {
         width: calc(100% - 229px);
     }
 }
+@media screen and (min-width: 1100px) {
+    .sidebar {
+        width: 229px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .content {
+        width: calc(100% - 229px);
+    }
+}
