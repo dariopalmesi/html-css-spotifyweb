@@ -112,6 +112,7 @@ footer {
 .playlist {
     margin-left: -1rem;
 }
+
 .content {
     height: 100%;
     width: calc(100% - 245px);
