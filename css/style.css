@@ -6,6 +6,7 @@
 :root {
     --sp-color-light: #717479;
     --sp-color-primary: #141922;
+    --sp-color-footer: #282828;
 }
 
 /* #region common */
@@ -13,11 +14,12 @@ body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    font-family: "Lato", sans-serif;
 }
 
 main {
     height: calc(100% - 88px);
-    display: flex
+    display: flex;
 }
 header {
     display: flex;
@@ -28,6 +30,24 @@ a {
     text-decoration: none;
     color: var(--sp-color-light);
 }
+h2 {
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+h4 {
+    color: white;
+    margin: 1rem;
+}
+p{
+    color: var(--sp-color-light);
+}
+img {
+    max-width: 100%;
+}
+footer {
+    background-color: var(--sp-color-footer);
+}
 
 /* #region debug  */
 .debug main {
@@ -36,7 +56,6 @@ a {
 }
 
 .debug footer {
-    border: dashed 1px;
     background-color: blueviolet;
 }
 
@@ -56,13 +75,12 @@ a {
 
 .sidebar {
     width: 245px;
-    border: dashed;
     height: 100%;
     flex-shrink: 0;
+    background-color: black;
 }
 
 .content {
-    border: dashed 1px;
     height: 100%;
     width: calc(100% - 245px);
     background-color: var(--sp-color-primary);
@@ -82,10 +100,13 @@ a {
 
 .col-4 {
     width: calc((100% / 12)*4);
-    border: dashed 1px;
     height: 250px;
     margin-top: 2rem;
 }
+.card {
+    text-align: center;
+}
+
 
 [class^="col-"] {
     padding: 0.5rem;
@@ -127,9 +148,7 @@ a {
 
     .col-sm-6 {
         width: 50%;
-        border: dashed 1px;
         height: 250px;
-        background-color: cornflowerblue;
         margin-top: 2rem;
     }
 }
@@ -147,9 +166,7 @@ a {
 
     .col-sm-6 {
         width: 50%;
-        border: dashed 1px;
         height: 250px;
-        background-color: cornflowerblue;
         margin-top: 2rem;
     }
 }
