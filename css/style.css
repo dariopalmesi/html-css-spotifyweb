@@ -15,6 +15,11 @@ main {
     height: calc(100% - 88px);
     display: flex
 }
+header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 
 /* #region debug  */
 .debug main {
@@ -27,20 +32,31 @@ main {
     background-color: blueviolet;
 }
 
+.debug .sidebar {
+    background-color: blue;
+}
+
+.debug .content {
+    background-color: red;
+}
+
+.debug .col-4 {
+    background-color: cornflowerblue;
+}
+
 /* #region utility */
 
 .sidebar {
     width: 245px;
     border: dashed;
     height: 100%;
-    background-color: darkblue;
+    flex-shrink: 0;
 }
 
 .content {
     border: dashed 1px;
     height: 100%;
     width: calc(100% - 245px);
-    background-color: darkred;
 }
 
 .container {
@@ -51,14 +67,18 @@ main {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 --1rem;
+}
 
-    .col-4 {
-        width: calc((100% / 12)*4);
-        border: dashed 1px;
-        height: 250px;
-        background-color: cornflowerblue;
-        margin-top: 2rem;
-    }
+.col-4 {
+    width: calc((100% / 12)*4);
+    border: dashed 1px;
+    height: 250px;
+    margin-top: 2rem;
+}
+
+[class^="col-"] {
+    padding: 0.5rem;
 }
 
 .bottom {
@@ -66,43 +86,60 @@ main {
 }
 
 /* media query */
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1100px) {
     .sidebar {
-        width: 50px;
+        width: 229px;
     }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1100px) {
     .content {
-        width: calc(100% - 50px)
+        width: calc(100% - 229px);
     }
+
+    .col-md-2 {
+        width: calc();
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 229px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        width: calc(100% - 229px);
+    }
+
     .col-sm-6 {
-        width: calc((100% / 12)*6);
+        width: 50%;
         border: dashed 1px;
         height: 250px;
         background-color: cornflowerblue;
         margin-top: 2rem;
     }
 }
-@media screen and (min-width: 700px) {
+
+@media screen and (max-width: 600px) {
     .sidebar {
-        width: 229px;
+        width: 50px;
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 600px) {
     .content {
-        width: calc(100% - 229px);
+        width: calc(100% - 50px)
     }
-}
 
-@media screen and (min-width: 1100px) {
-    .sidebar {
-        width: 229px;
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    .content {
-        width: calc(100% - 229px);
+    .col-sm-6 {
+        width: 50%;
+        border: dashed 1px;
+        height: 250px;
+        background-color: cornflowerblue;
+        margin-top: 2rem;
     }
 }
