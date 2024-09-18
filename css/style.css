@@ -106,6 +106,12 @@ footer {
     color: var(--sp-color-light);
     font-size: small;
 }
+.logo-sm {
+    display: none;
+}
+.playlist {
+    margin-left: -1rem;
+}
 .content {
     height: 100%;
     width: calc(100% - 245px);
@@ -189,15 +195,15 @@ footer {
     span {
         display: none;
     }
-    .home {
+    .logo-lg {
+        display: none;
+    }
+    .logo-sm {
+        display: block;
         max-width: 100%;
     }
-    .logo {
-    display: none;
-    }
-    .logo-2{
-        display: block;
-        background-image: url(../img/logo-small.svg);
+    .home {
+        max-width: 100%;
     }
     .sidebar {
         width: 50px;
