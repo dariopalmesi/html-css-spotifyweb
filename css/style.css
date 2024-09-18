@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --sp-color-light: #717479;
     --sp-color-primary: #141922;
@@ -21,27 +22,32 @@ main {
     height: calc(100% - 88px);
     display: flex;
 }
+
 header {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
+
 a {
     text-decoration: none;
     color: var(--sp-color-light);
 }
+
 h2 {
     color: white;
     margin-top: 3rem;
     margin-bottom: 1rem;
 }
+
 h4 {
     color: white;
     margin: 1rem;
     font-size: small;
     margin-bottom: -0.15rem;
 }
-p{
+
+p {
     color: var(--sp-color-light);
     font-size: small;
     margin-top: 0.25rem;
@@ -49,6 +55,7 @@ p{
 img {
     max-width: 100%;
 }
+
 footer {
     background-color: var(--sp-color-footer);
 }
@@ -84,6 +91,21 @@ footer {
     background-color: black;
 }
 
+.logo {
+    margin: 2rem 0rem;
+}
+.menu {
+    color: white;
+    display: flex;
+}
+.home {
+    max-width: 10%;
+    margin-bottom: 1rem;
+}
+.logos {
+    color: var(--sp-color-light);
+    font-size: small;
+}
 .content {
     height: 100%;
     width: calc(100% - 245px);
@@ -98,7 +120,6 @@ footer {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
     margin: 0 --1rem;
 }
 
@@ -107,6 +128,7 @@ footer {
     height: 250px;
     margin-top: 2rem;
 }
+
 .card {
     text-align: center;
 }
@@ -155,6 +177,12 @@ footer {
         height: 250px;
         margin-top: 2rem;
     }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 --1rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -172,5 +200,11 @@ footer {
         width: 50%;
         height: 250px;
         margin-top: 2rem;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 --1rem;
     }
 }
