@@ -24,9 +24,7 @@ main {
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+    border: 1px;
 }
 
 a {
@@ -38,6 +36,7 @@ h2 {
     color: white;
     margin-top: 3rem;
     margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 h4 {
@@ -52,6 +51,7 @@ p {
     font-size: small;
     margin-top: 0.25rem;
 }
+
 img {
     max-width: 100%;
 }
@@ -83,49 +83,92 @@ footer {
 }
 
 /* #region utility */
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 
 .sidebar {
     width: 245px;
-    height: 100% ;
+    height: 100%;
     flex-shrink: 0;
     background-color: black;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 80%;
+    }
 }
 
 .logo {
     margin: 2rem 0rem;
+
     .fa-heart {
         color: var(--sp-color-light);
         margin-left: 3rem;
     }
+
     .fa-folder {
         color: var(--sp-color-light);
         margin-left: 1rem;
     }
 }
+
 .menu {
     color: white;
     display: flex;
 }
+
 .home {
     max-width: 10%;
     margin-bottom: 1rem;
 }
+
 .logos {
     color: var(--sp-color-light);
     font-size: small;
 }
+
 .logo-sm {
     display: none;
 }
+
 .playlist {
     color: var(--sp-color-light);
 }
+
+.app {
+    color: var(--sp-color-light);
+}
+
 .square {
-    margin: 1rem 0rem;
+    border: solid 1px;
+    width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+    background-color: var(--sp-color-light);
+    display: flex;
+    margin-bottom: 1rem;
+    span {
+        font-size: small;
+        margin-left: 1rem;
+    }
+
+    .fa-plus {
+        color: black;
+        padding-left: 0.40rem;
+        padding-top: 0.30rem;
+    }
 }
+
 .name-playlist {
-   padding-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
 }
+
 .content {
     height: 100%;
     width: calc(100% - 245px);
@@ -137,11 +180,7 @@ footer {
     width: 80%;
     margin: auto;
 }
-.container-side {
-    width: 80%;
-    margin: auto;
-    height: 100%;
-}
+
 
 .row {
     display: flex;
@@ -167,14 +206,17 @@ footer {
     height: 88px;
     display: flex;
     justify-content: space-between;
+
     .einaudi {
         max-width: 100%;
         margin: 1rem 1rem;
     }
-    
+
 }
+
 .left {
     display: flex;
+
     .sinister {
         margin-top: 2rem
     }
@@ -228,23 +270,33 @@ footer {
     .sidebar {
         width: 50px;
     }
+
     span {
         display: none;
     }
+
     .logo-lg {
         display: none;
     }
+
     .logo-sm {
         display: block;
         max-width: 100%;
     }
+
     .home {
         max-width: 100%;
     }
-    .playlist{
+
+    .playlist {
         display: none;
     }
-   
+
+    .logo-d-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
