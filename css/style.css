@@ -8,6 +8,7 @@
     --sp-color-light: #717479;
     --sp-color-primary: #141922;
     --sp-color-footer: #282828;
+    --sp-color-header: #080b12;
 }
 
 /* #region common */
@@ -25,6 +26,12 @@ main {
 
 header {
     border: 1px;
+    height: 90px;
+    background-color: var(--sp-color-header);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 a {
@@ -87,6 +94,20 @@ footer {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+.link:hover {
+    text-decoration: underline;
+    color: green;
+}
+.up {
+    background-color: var(--sp-color-header);
+    color: white;
+    border-radius: 500px;
+    width: 200px;
+    height: 50px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border-color: white;
 }
 
 .sidebar {
