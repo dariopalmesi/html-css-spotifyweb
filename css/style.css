@@ -43,7 +43,7 @@ h2 {
     color: white;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
+    margin-left: 2.5rem;
 }
 
 h4 {
@@ -65,6 +65,9 @@ img {
 
 footer {
     background-color: var(--sp-color-footer);
+}
+hr{
+    color: var(--sp-color-light);
 }
 
 /* #region debug  */
@@ -115,6 +118,7 @@ footer {
     height: 100%;
     flex-shrink: 0;
     background-color: black;
+    overflow-y: auto;
 
     .container {
         display: flex;
@@ -164,6 +168,8 @@ footer {
 
 .app {
     color: var(--sp-color-light);
+    display: flex;
+    gap: 1rem;
 }
 
 .square {
@@ -213,11 +219,22 @@ footer {
     height: 250px;
     margin-top: 2rem;
 }
+.col-2 {
+    width: calc((100% / 12)*2);
+    height: 250px;
+    margin-top: 2rem;
+}
 
 .card {
     text-align: center;
 }
-
+.john {
+    margin-top: 10rem;
+}
+.doe {
+    margin-left: 2.5rem;
+    margin-top: -0.5rem;
+}
 
 [class^="col-"] {
     padding: 0.5rem;
