@@ -66,7 +66,8 @@ img {
 footer {
     background-color: var(--sp-color-footer);
 }
-hr{
+
+hr {
     color: var(--sp-color-light);
 }
 
@@ -98,10 +99,12 @@ hr{
     justify-content: center;
     gap: 1rem;
 }
+
 .link:hover {
     text-decoration: underline;
     color: green;
 }
+
 .up {
     background-color: var(--sp-color-header);
     color: white;
@@ -172,6 +175,13 @@ hr{
     gap: 1rem;
 }
 
+.profile {
+    color: white;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 .square {
     border: solid 1px;
     width: 30px;
@@ -180,6 +190,7 @@ hr{
     background-color: var(--sp-color-light);
     display: flex;
     margin-bottom: 1rem;
+
     span {
         font-size: small;
         margin-left: 1rem;
@@ -219,6 +230,7 @@ hr{
     height: 250px;
     margin-top: 2rem;
 }
+
 .col-2 {
     width: calc((100% / 12)*2);
     height: 250px;
@@ -227,10 +239,25 @@ hr{
 
 .card {
     text-align: center;
+    position: relative;
+
+    .fa-circle-play {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 35%;
+        left: 45%;
+    }
 }
+
+.card .fa-circle-play:hover {
+   display: none;
+}
+
 .john {
     margin-top: 10rem;
 }
+
 .doe {
     margin-left: 2.5rem;
     margin-top: -0.5rem;
@@ -258,6 +285,24 @@ hr{
     .sinister {
         margin-top: 2rem
     }
+}
+
+.center {
+    color: white;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.right {
+    color: white;
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 
