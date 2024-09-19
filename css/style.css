@@ -247,12 +247,14 @@ hr {
         position: absolute;
         top: 35%;
         left: 45%;
+        display: none;
     }
 }
 
-.card .fa-circle-play:hover {
-   display: none;
+.play:hover .fa-circle-play {
+   display: block;
 }
+
 
 .john {
     margin-top: 10rem;
